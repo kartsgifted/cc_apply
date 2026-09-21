@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>융합창작 심화과정 참여 신청 | K예술영재 전통예술</title>
+<meta name="description" content="K예술영재 프로젝트 전통예술분야 융합창작 심화과정 참여 신청 (2026. 9. 22.~9. 27.)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+@font-face{font-family:'Paperlogy';src:url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Paperlogy';src:url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Paperlogy';src:url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Paperlogy';src:url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+
+:root{
+  --teal:#176C86; --deep:#1C6077; --night:#0F3F4F;
+  --ivory:#FAF9F5; --ink:#212326; --ink2:#5B6166; --line:#E3E1D9;
+  --coral:#E84958; --apricot:#FFB098; --apricot-soft:#FFE7DE;
+  --head:'Paperlogy','Pretendard',sans-serif;
+  --body:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word}
+button,input,textarea,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- 표지 ---------- */
+.hero{position:relative;background:var(--night);color:#fff;min-height:min(92vh,760px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding:0 24px 40px}
+.hero svg.strings{position:absolute;inset:0;width:100%;height:100%}
+.hero .str{stroke:rgba(255,255,255,.22);stroke-width:1;fill:none}
+.hero .str.hot{stroke:var(--apricot);stroke-width:1.4;opacity:.9}
+.hero-top{position:absolute;top:22px;left:24px;right:24px;display:flex;justify-content:space-between;font-size:13px;color:rgba(255,255,255,.72)}
+.hero-inner{position:relative;max-width:640px;margin:0 auto;width:100%}
+.hero .field{display:inline-block;font-family:var(--head);font-weight:600;font-size:14px;color:var(--night);background:var(--apricot);padding:3px 10px;border-radius:3px;margin-bottom:18px}
+.hero h1{font-family:var(--head);font-weight:800;font-size:clamp(40px,11vw,68px);line-height:1.12;letter-spacing:-.02em;margin:0 0 18px}
+.hero h1 small{display:block;font-weight:600;font-size:.42em;letter-spacing:0;margin-bottom:10px;color:rgba(255,255,255,.8)}
+.hero p.lead{margin:0 0 26px;color:rgba(255,255,255,.86);font-size:16px;max-width:30em}
+.period{display:flex;gap:14px;align-items:baseline;border-top:1px solid rgba(255,255,255,.25);padding-top:16px;font-size:14px;color:rgba(255,255,255,.75)}
+.period b{font-family:var(--head);font-weight:700;font-size:20px;color:#fff}
+
+/* ---------- 본문 공통 ---------- */
+.wrap{max-width:640px;margin:0 auto;padding:0 24px}
+section.info{padding:56px 0 8px}
+h2{font-family:var(--head);font-weight:700;font-size:24px;line-height:1.35;margin:0 0 20px;letter-spacing:-.01em}
+.intro-copy{font-size:17px;color:var(--ink);margin:0 0 8px}
+
+/* 창작 과정 줄 */
+.flow{list-style:none;margin:0 0 36px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.flow::before{content:"";position:absolute;left:12.5%;right:12.5%;top:11px;height:2px;background:var(--teal)}
+.flow li{position:relative;text-align:center;font-size:14px;font-weight:600;line-height:1.4;padding-top:34px}
+.flow li::before{content:"";position:absolute;top:4px;left:50%;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--ivory);border:2px solid var(--teal)}
+.flow li:last-child::before{background:var(--coral);border-color:var(--coral)}
+
+.prog{border-left:2px solid var(--line);margin:0 0 8px 6px;padding:0}
+.prog article{position:relative;padding:0 0 28px 22px}
+.prog article::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;background:var(--teal);border-radius:2px;transform:rotate(45deg)}
+.prog h3{font-family:var(--head);font-weight:700;font-size:18px;margin:0 0 6px}
+.prog .when{font-size:13px;font-weight:600;color:var(--deep);margin:0 0 8px}
+.prog ul{margin:0;padding-left:18px;color:var(--ink2);font-size:15px}
+.prog li+li{margin-top:4px}
+
+.who{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 20px;margin:0 0 20px}
+.who ul{margin:0;padding:0;list-style:none}
+.who li{position:relative;padding-left:28px;font-size:15px}
+.who li+li{margin-top:10px}
+.who li::before{content:"";position:absolute;left:4px;top:8px;width:12px;height:7px;border-left:2px solid var(--teal);border-bottom:2px solid var(--teal);transform:rotate(-45deg)}
+.note{font-size:14px;color:var(--ink2);background:var(--apricot-soft);border-radius:8px;padding:14px 16px;margin:0 0 40px}
+
+/* ---------- 신청 단계 ---------- */
+.apply{display:none;min-height:100vh;padding-bottom:120px}
+body.mode-apply .cover{display:none}
+body.mode-apply .apply{display:block}
+.topbar{position:sticky;top:0;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ivory);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:12px;height:56px}
+.back{border:0;background:none;padding:8px;margin-left:-8px;cursor:pointer;display:flex;border-radius:6px}
+.topbar .t{font-family:var(--head);font-weight:600;font-size:15px;flex:1}
+.topbar .count{font-size:13px;color:var(--ink2)}
+.bar{height:3px;background:var(--line)}
+.bar i{display:block;height:100%;background:var(--teal);width:0;transition:width .3s}
+
+.step{display:none;padding-top:34px}
+.step.on{display:block}
+.qno{font-family:var(--head);font-weight:700;color:var(--teal);font-size:15px;margin:0 0 6px}
+.step h2{font-size:26px;margin-bottom:8px}
+.help{color:var(--ink2);font-size:15px;margin:0 0 26px}
+label.lbl{display:block;font-weight:600;font-size:15px;margin:0 0 8px}
+.req{color:var(--coral);margin-left:2px}
+.inp{width:100%;height:54px;border:1.5px solid var(--line);background:#fff;border-radius:8px;padding:0 16px;font-size:17px;transition:border-color .15s}
+.inp:focus{outline:none;border-color:var(--teal)}
+textarea.inp{height:auto;min-height:240px;padding:14px 16px;line-height:1.7;resize:vertical}
+.fgroup{margin-bottom:28px}
+.row2{display:grid;grid-template-columns:1fr 132px;gap:10px}
+select.inp{appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23212326' stroke-width='1.6' fill='none'/%3E%3C/svg%3E") no-repeat right 14px center}
+.err{color:var(--coral);font-size:14px;margin:8px 0 0;min-height:0}
+
+/* 전공 타일 */
+.majors{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt label{display:flex;flex-direction:column;justify-content:center;min-height:78px;padding:12px 14px;border:1.5px solid var(--line);background:#fff;border-radius:8px;cursor:pointer;transition:border-color .15s,background .15s}
+.opt label b{font-family:var(--head);font-weight:700;font-size:19px;line-height:1.2}
+.opt label span{font-size:12px;color:var(--ink2);margin-top:3px}
+.opt input:checked+label{border-color:var(--teal);background:var(--teal);color:#fff}
+.opt input:checked+label span{color:rgba(255,255,255,.75)}
+.opt input:focus-visible+label{outline:3px solid var(--coral);outline-offset:2px}
+
+/* 예/아니요 */
+.choice{display:grid;gap:12px}
+.choice .opt label{flex-direction:row;align-items:center;justify-content:flex-start;gap:14px;min-height:72px;padding:0 18px;font-size:17px;font-weight:600}
+.choice .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line);flex:none;position:relative;background:#fff}
+.choice input:checked+label .dot{border-color:#fff}
+.choice input:checked+label .dot::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--apricot)}
+
+.counter{display:flex;justify-content:space-between;font-size:13px;color:var(--ink2);margin-top:6px}
+.prompt{background:#fff;border-left:3px solid var(--apricot);padding:12px 16px;font-size:14px;color:var(--ink2);margin:0 0 16px}
+.prompt p{margin:0}
+
+/* 참여 확인 체크 */
+.checks{display:grid;gap:10px}
+.ck{position:relative}
+.ck input{position:absolute;opacity:0}
+.ck label{display:flex;gap:14px;padding:16px 16px;background:#fff;border:1.5px solid var(--line);border-radius:8px;cursor:pointer;font-size:15px;line-height:1.6}
+.ck .box{flex:none;width:22px;height:22px;border-radius:4px;border:2px solid var(--line);margin-top:1px;position:relative;background:#fff}
+.ck input:checked+label{border-color:var(--teal)}
+.ck input:checked+label .box{background:var(--teal);border-color:var(--teal)}
+.ck input:checked+label .box::after{content:"";position:absolute;left:5px;top:1px;width:7px;height:12px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.ck input:focus-visible+label{outline:3px solid var(--coral);outline-offset:2px}
+.allck{display:flex;align-items:center;gap:10px;border:0;background:none;padding:6px 0;margin:0 0 12px;font-weight:600;font-size:15px;color:var(--teal);cursor:pointer}
+
+/* 검토 */
+dl.review{margin:0;border-top:2px solid var(--ink)}
+.review div{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.review dt{font-size:14px;color:var(--ink2)}
+.review dd{margin:0;font-weight:600;white-space:pre-wrap}
+.review dd.long{font-weight:400;font-size:15px}
+.edit{border:0;background:none;color:var(--teal);font-weight:600;font-size:14px;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* 하단 고정 버튼 */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:10;background:linear-gradient(to top,var(--ivory) 70%,rgba(250,249,245,0));padding:18px 0 calc(16px + env(safe-area-inset-bottom,0px))}
+.dock .wrap{display:flex;gap:10px}
+.btn{flex:1;height:58px;border:0;border-radius:8px;background:var(--teal);color:#fff;font-family:var(--head);font-weight:700;font-size:18px;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--deep)}
+.btn:disabled{background:#B9C4C8;cursor:not-allowed}
+.btn.ghost{flex:none;width:96px;background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.cover .dock .btn{background:var(--coral)}
+.cover .dock .btn:hover{background:#cf3a48}
+
+/* 완료 / 안내 화면 */
+.full{min-height:100vh;display:none;flex-direction:column;justify-content:center;padding:48px 0}
+.full.on{display:flex}
+body.mode-done .cover,body.mode-done .apply,body.mode-closed .cover,body.mode-closed .apply{display:none}
+.full .mark{width:64px;height:64px;border-radius:50%;background:var(--teal);position:relative;margin-bottom:28px}
+.full .mark::after{content:"";position:absolute;left:23px;top:14px;width:14px;height:26px;border:solid #fff;border-width:0 4px 4px 0;transform:rotate(45deg)}
+.full h2{font-size:30px;margin-bottom:14px}
+.full p{color:var(--ink2);margin:0 0 12px}
+.receipt{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:20px 0}
+.receipt p{margin:0;color:var(--ink);font-size:15px}
+.closed-mark{background:var(--line)}
+.closed-mark::after{display:none}
+
+.demo{position:fixed;top:calc(env(safe-area-inset-top,0px) + 8px);right:8px;z-index:20;background:var(--apricot);color:var(--night);font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px}
+.toast{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 18px;border-radius:8px;font-size:14px;z-index:30;opacity:0;transition:opacity .2s;pointer-events:none;max-width:calc(100% - 40px)}
+.toast.on{opacity:1}
+footer{padding:0 0 140px;font-size:13px;color:var(--ink2)}
+
+@media (min-width:720px){
+  .hero{padding-bottom:64px}
+  .majors{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:360px){.majors{grid-template-columns:repeat(2,1fr)}.row2{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ================= 표지 + 안내 ================= -->
+<div class="cover">
+  <header class="hero">
+    <svg class="strings" id="strings" aria-hidden="true" preserveAspectRatio="none"></svg>
+    <div class="hero-top"><span>한국예술영재교육연구원</span><span>K예술영재 프로젝트</span></div>
+    <div class="hero-inner">
+      <span class="field">전통예술분야</span>
+      <h1><small>K예술영재</small>융합창작<br>심화과정<br>참여 신청</h1>
+      <p class="lead">여름 워크숍에서 해 본 융합창작을 이어서, 내 악기와 소리로 작품 한 편을 끝까지 만들어 봅니다.</p>
+      <div class="period"><span>신청기간</span><b>9. 22.(화) ~ 9. 27.(일)</b></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="info">
+      <h2>이런 과정이에요</h2>
+      <p class="intro-copy">전공실기와는 별도로 운영하는 창작 과정입니다. 자기 전공 악기·소리로 아래 순서를 밟아 작품을 완성합니다.</p>
+      <ol class="flow" aria-label="작품 제작 단계">
+        <li>아이디어<br>구상</li><li>음악<br>구성</li><li>녹음·<br>제작</li><li>작품<br>완성</li>
+      </ol>
+
+      <div class="prog">
+        <article>
+          <h3>심화멘토링</h3>
+          <p class="when">멘토링 기간 중 집중 수업 3회 내외</p>
+          <ul>
+            <li>여름 워크숍에서 경험한 선율·리듬 구성, 자기 악기 녹음, 디지털 도구를 활용한 음악 제작을 바탕으로 창작을 심화합니다.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>수업 외 창작활동</h3>
+          <p class="when">멘토링 시간 밖에서도 계속</p>
+          <ul>
+            <li>개별 과제와 온라인 소통·피드백으로 작품 제작을 이어갑니다.</li>
+            <li>완성도를 높이기 위해 필요하면 온라인·오프라인 추가 수업이 있을 수 있습니다.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>겨울캠프 및 결과발표</h3>
+          <p class="when">캠프 저녁시간 활용 · 수료식 발표</p>
+          <ul>
+            <li>캠프 기간 저녁시간 등을 활용해 작품을 점검하고 연습합니다.</li>
+            <li>완성된 작품 중 1~2개를 골라 수료식에서 발표합니다.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="info" style="padding-top:24px">
+      <h2>신청 전에 확인해 주세요</h2>
+      <div class="who">
+        <ul>
+          <li>융합창작에 관심을 갖고 적극적·지속적으로 참여할 수 있는 학생</li>
+          <li>멘토링 수업 외에 주어지는 창작 과제와 작품 제작에 성실히 참여할 수 있는 학생</li>
+          <li>필요할 때 진행되는 온라인·오프라인 추가 수업과 피드백에 참여할 수 있는 학생</li>
+          <li>겨울캠프까지 작품을 발전시키고 최종 결과물 제작·발표에 참여할 의지가 있는 학생</li>
+        </ul>
+      </div>
+      <p class="note">신청이 곧 참여 확정은 아닙니다. 신청 내용과 참여 의지를 종합적으로 검토해 최종 참여자를 선발한 뒤 개별로 안내합니다.</p>
+    </section>
+    <footer>문의: 한국예술영재교육연구원 K예술영재 프로젝트 전통예술분야 운영팀</footer>
+  </main>
+
+  <div class="dock"><div class="wrap"><button class="btn" id="startBtn" type="button">신청서 작성하기</button></div></div>
+</div>
+
+<!-- ================= 신청서 ================= -->
+<div class="apply" aria-live="polite">
+  <div class="topbar">
+    <div class="wrap">
+      <button class="back" id="backBtn" type="button" aria-label="이전 단계"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <span class="t">융합창작 심화과정 신청</span>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="bar"><i id="barFill"></i></div>
+  </div>
+
+  <form class="wrap" id="form" novalidate onsubmit="return false">
+    <!-- 1. 기본 정보 -->
+    <section class="step" data-step="info">
+      <p class="qno">1 – 3</p>
+      <h2>학생 정보를 알려주세요</h2>
+      <p class="help">선발 결과 안내에 쓰이니 정확하게 적어 주세요.</p>
+
+      <div class="fgroup">
+        <label class="lbl" for="name">학생 이름<span class="req">*</span></label>
+        <input class="inp" id="name" name="name" autocomplete="name" maxlength="20" placeholder="홍길동">
+        <p class="err" data-err="name"></p>
+      </div>
+
+      <div class="fgroup">
+        <span class="lbl" id="majorLbl">전공<span class="req">*</span></span>
+        <div class="majors" role="radiogroup" aria-labelledby="majorLbl" id="majors"></div>
+        <p class="err" data-err="major"></p>
+      </div>
+
+      <div class="fgroup">
+        <label class="lbl" for="school">학교 / 학년<span class="req">*</span></label>
+        <div class="row2">
+          <input class="inp" id="school" name="school" maxlength="30" placeholder="○○중학교">
+          <select class="inp" id="grade" name="grade" aria-label="학년">
+            <option value="">학년</option>
+            <option>1학년</option><option>2학년</option><option>3학년</option>
+            <option>4학년</option><option>5학년</option><option>6학년</option>
+          </select>
+        </div>
+        <p class="err" data-err="school"></p>
+      </div>
+    </section>
+
+    <!-- 2. 참여 희망 -->
+    <section class="step" data-step="want">
+      <p class="qno">4</p>
+      <h2>융합창작 심화과정 참여를 희망합니까?</h2>
+      <p class="help">‘아니요’를 고르면 이후 문항 없이 바로 제출 단계로 넘어갑니다.</p>
+      <div class="choice" role="radiogroup" aria-label="참여 희망 여부">
+        <div class="opt"><input type="radio" name="want" id="wantY" value="예"><label for="wantY"><span class="dot"></span>예, 참여를 희망합니다.</label></div>
+        <div class="opt"><input type="radio" name="want" id="wantN" value="아니요"><label for="wantN"><span class="dot"></span>아니요.</label></div>
+      </div>
+      <p class="err" data-err="want"></p>
+    </section>
+
+    <!-- 3. 지원동기 -->
+    <section class="step" data-step="motive">
+      <p class="qno">5</p>
+      <h2>지원동기</h2>
+      <p class="help">참여하고 싶은 이유를 자유롭게 적어 주세요.</p>
+      <div class="prompt">
+        <p>이런 내용을 함께 적어 주면 좋아요 — 여름 워크숍에서 기억에 남은 활동, 이번 과정에서 해 보고 싶은 창작 활동, 만들어 보고 싶은 작품.</p>
+      </div>
+      <label class="sr" for="motive">지원동기</label>
+      <textarea class="inp" id="motive" name="motive" maxlength="1500" placeholder="여름 워크숍에서 제 해금 소리를 녹음해서 …"></textarea>
+      <div class="counter"><span>최소 50자</span><span><b id="motiveLen">0</b> / 1,500자</span></div>
+      <p class="err" data-err="motive"></p>
+    </section>
+
+    <!-- 4. 참여 확인 -->
+    <section class="step" data-step="agree">
+      <p class="qno">6</p>
+      <h2>참여 확인</h2>
+      <p class="help">아래 내용을 읽고 모두 체크해 주세요.</p>
+      <button type="button" class="allck" id="allCk">모두 확인했어요</button>
+      <div class="checks" id="checks"></div>
+      <p class="err" data-err="agree"></p>
+    </section>
+
+    <!-- 5. 검토 -->
+    <section class="step" data-step="review">
+      <h2>신청 내용을 확인해 주세요</h2>
+      <p class="help">제출 후에도 신청기간 안에는 같은 이름·학교로 다시 제출하면 최신 내용으로 바뀝니다.</p>
+      <dl class="review" id="review"></dl>
+    </section>
+  </form>
+
+  <div class="dock"><div class="wrap">
+    <button class="btn" id="nextBtn" type="button">다음</button>
+  </div></div>
+</div>
+
+<!-- ================= 완료 ================= -->
+<div class="full wrap" id="done">
+  <div class="mark"></div>
+  <h2 id="doneTitle">신청서를 제출했어요</h2>
+  <p id="doneMsg">신청 마감(9. 27.) 후 신청 내용과 참여 의지를 종합적으로 검토해 최종 참여자를 개별로 안내합니다.</p>
+  <div class="receipt" id="receipt"></div>
+  <p style="font-size:14px">내용을 고치려면 신청기간 안에 같은 이름·학교로 다시 제출하세요.</p>
+</div>
+
+<!-- ================= 기간 외 ================= -->
+<div class="full wrap" id="closed">
+  <div class="mark closed-mark"></div>
+  <h2 id="closedTitle">신청기간이 아닙니다</h2>
+  <p id="closedMsg"></p>
+  <p>신청기간: 2026. 9. 22.(화) 00:00 ~ 9. 27.(일) 23:59</p>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* =========================================================
+   설정 — Apps Script 웹앱 배포 후 ENDPOINT에 URL 붙여넣기
+   ENDPOINT가 비어 있으면 '시연 모드'(실제 저장 안 됨)
+   ?test=1 을 붙이면 신청기간 제한 없이 테스트 (시트에 '테스트' 표시)
+   ========================================================= */
+const CONFIG = {
+  ENDPOINT: '',
+  OPEN:  '2026-09-22T00:00:00+09:00',
+  CLOSE: '2026-09-27T23:59:59+09:00',
+  MIN_MOTIVE: 50
+};
+
+const MAJORS = [
+  ['가야금','Gayageum'],['거문고','Geomungo'],['해금','Haegeum'],
+  ['타악','Percussion'],['판소리','Pansori'],['연희','Yeonhui']
+];
+const AGREES = [
+  '심화멘토링 수업 외에 과제 및 개별 창작 활동이 있을 수 있음을 확인하였습니다.',
+  '필요에 따라 온라인·오프라인 추가 수업 또는 피드백이 진행될 수 있음을 확인하였습니다.',
+  '겨울캠프까지 지속적으로 작품 제작에 참여하고, 최종 결과물 완성 및 발표에 성실히 참여하겠습니다.',
+  '본 신청은 참여 확정을 의미하지 않으며, 신청내용 및 참여 의지 등을 종합적으로 검토하여 최종 참여자를 선발한 후 개별 안내함을 확인하였습니다.'
+];
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const params = new URLSearchParams(location.search);
+const TEST = params.get('test') === '1';
+const DRAFT_KEY = 'kriga_fusion_apply_draft_v1';
+
+/* ---------- 가야금 12현 → 파형 (표지 1회 연출) ---------- */
+(function strings(){
+  const svg = $('#strings');
+  const W = 1000, H = 1000, N = 12;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const paths = [];
+  for (let i = 0; i < N; i++){
+    const p = document.createElementNS('http://www.w3.org/2000/svg','path');
+    p.setAttribute('class', 'str' + (i === 7 ? ' hot' : ''));
+    svg.appendChild(p); paths.push(p);
+  }
+  const y0 = 90, gap = 36;
+  function draw(t){
+    paths.forEach((p,i)=>{
+      const y = y0 + i*gap;
+      const amp = (i===7?26:10+ (i%3)*4) * Math.exp(-t*1.1) * (1 + (i===7?0.6:0));
+      let d = `M0 ${y}`;
+      for (let x = 0; x <= W; x += 10){
+        const env = Math.sin(Math.PI * x / W);               // 양 끝(안족·부들) 고정
+        const w = Math.sin(x/ (18 + i*1.3) + t*(9 + i)) * amp * env * env;
+        d += ` L${x} ${(y + w).toFixed(1)}`;
+      }
+      p.setAttribute('d', d);
+    });
+  }
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce){ draw(0.9); return; }
+  const start = performance.now();
+  (function loop(now){
+    const t = (now - start)/1000;
+    draw(t);
+    if (t < 4.2) requestAnimationFrame(loop); else draw(4.2);
+  })(start);
+})();
+
+/* ---------- 폼 구성 ---------- */
+$('#majors').innerHTML = MAJORS.map(([k,e],i)=>
+  `<div class="opt"><input type="radio" name="major" id="m${i}" value="${k}"><label for="m${i}"><b>${k}</b><span>${e}</span></label></div>`).join('');
+$('#checks').innerHTML = AGREES.map((t,i)=>
+  `<div class="ck"><input type="checkbox" id="a${i}" name="agree" value="${i}"><label for="a${i}"><span class="box"></span><span>${t}</span></label></div>`).join('');
+
+/* ---------- 단계 ---------- */
+const STEPS = ['info','want','motive','agree','review'];
+let cur = 0;
+const val = n => { const el = document.querySelector(`[name="${n}"]:checked`) || document.querySelector(`[name="${n}"]`); return el ? (el.type==='radio'&&!el.checked ? '' : el.value.trim()) : ''; };
+const wantsIn = () => val('want') === '예';
+const path = () => wantsIn() || !val('want') ? STEPS : ['info','want','review'];
+
+function show(i){
+  const p = path();
+  cur = Math.max(0, Math.min(i, p.length-1));
+  const key = p[cur];
+  $$('.step').forEach(s => s.classList.toggle('on', s.dataset.step === key));
+  $('#barFill').style.width = ((cur+1)/p.length*100) + '%';
+  $('#count').textContent = `${cur+1} / ${p.length}`;
+  const nb = $('#nextBtn');
+  nb.textContent = key === 'review' ? '신청서 제출하기' : '다음';
+  if (key === 'review') buildReview();
+  window.scrollTo(0,0);
+  const h = $(`.step[data-step="${key}"] h2`); if (h){ h.setAttribute('tabindex','-1'); h.focus({preventScroll:true}); }
+}
+
+function setErr(k, msg){ const e = document.querySelector(`[data-err="${k}"]`); if (e) e.textContent = msg || ''; }
+function validate(key){
+  $$('.err').forEach(e=>e.textContent='');
+  let ok = true;
+  if (key === 'info'){
+    if (!val('name')){ setErr('name','학생 이름을 입력해 주세요.'); ok=false; }
+    if (!val('major')){ setErr('major','전공을 하나 골라 주세요.'); ok=false; }
+    if (!val('school') || !$('#grade').value){ setErr('school','학교와 학년을 모두 입력해 주세요.'); ok=false; }
+  }
+  if (key === 'want' && !val('want')){ setErr('want','참여 희망 여부를 골라 주세요.'); ok=false; }
+  if (key === 'motive'){
+    const n = $('#motive').value.trim().length;
+    if (n < CONFIG.MIN_MOTIVE){ setErr('motive',`지원동기를 ${CONFIG.MIN_MOTIVE}자 이상 적어 주세요. (지금 ${n}자)`); ok=false; }
+  }
+  if (key === 'agree' && $$('[name="agree"]:checked').length < AGREES.length){ setErr('agree','네 가지 항목을 모두 체크해야 신청할 수 있습니다.'); ok=false; }
+  if (!ok){ const f = document.querySelector('.err:not(:empty)'); f && f.scrollIntoView({block:'center',behavior:'smooth'}); }
+  return ok;
+}
+
+function data(){
+  return {
+    name: val('name'), major: val('major'), school: val('school'), grade: $('#grade').value,
+    want: val('want'),
+    motive: wantsIn() ? $('#motive').value.trim() : '',
+    agree: wantsIn() ? AGREES.map((_,i)=> $('#a'+i).checked ? 'Y' : '') : ['','','',''],
+    test: TEST
+  };
+}
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function buildReview(){
+  const d = data();
+  const rows = [
+    ['학생 이름', d.name, 'info'], ['전공', d.major, 'info'], ['학교 / 학년', `${d.school} ${d.grade}`, 'info'],
+    ['참여 희망', d.want === '예' ? '예, 참여를 희망합니다.' : '아니요.', 'want']
+  ];
+  if (d.want === '예'){
+    rows.push(['지원동기', d.motive, 'motive', true]);
+    rows.push(['참여 확인', '4개 항목 모두 확인', 'agree']);
+  }
+  $('#review').innerHTML = rows.map(([k,v,s,long]) =>
+    `<div><dt>${k}<br><button type="button" class="edit" data-go="${s}">수정</button></dt><dd class="${long?'long':''}">${esc(v)}</dd></div>`).join('');
+}
+$('#review').addEventListener('click', e=>{
+  const b = e.target.closest('[data-go]'); if (!b) return;
+  show(path().indexOf(b.dataset.go));
+});
+
+/* ---------- 이벤트 ---------- */
+$('#startBtn').onclick = () => { document.body.classList.add('mode-apply'); show(cur); };
+$('#backBtn').onclick = () => {
+  if (cur === 0){ document.body.classList.remove('mode-apply'); window.scrollTo(0,0); return; }
+  show(cur-1);
+};
+$('#nextBtn').onclick = async () => {
+  const key = path()[cur];
+  if (key !== 'review'){ if (validate(key)) show(cur+1); return; }
+  await submit();
+};
+$('#motive').addEventListener('input', e => { $('#motiveLen').textContent = e.target.value.length.toLocaleString(); });
+$('#allCk').onclick = () => {
+  const boxes = $$('[name="agree"]'); const all = boxes.every(b=>b.checked);
+  boxes.forEach(b=>b.checked = !all); saveDraft();
+};
+$$('[name="want"]').forEach(r => r.addEventListener('change', () => { setErr('want',''); }));
+$('#form').addEventListener('input', saveDraft);
+$('#form').addEventListener('change', saveDraft);
+addEventListener('popstate', ()=>{}); 
+
+/* ---------- 임시저장 (같은 기기에서 이어쓰기) ---------- */
+function saveDraft(){
+  try{
+    const d = data(); delete d.test;
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
+  }catch(e){}
+}
+function loadDraft(){
+  try{
+    const d = JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null'); if (!d) return;
+    $('#name').value = d.name||''; $('#school').value = d.school||''; $('#grade').value = d.grade||'';
+    if (d.major){ const r = document.querySelector(`[name="major"][value="${d.major}"]`); r && (r.checked = true); }
+    if (d.want){ const r = document.querySelector(`[name="want"][value="${d.want}"]`); r && (r.checked = true); }
+    $('#motive').value = d.motive||''; $('#motiveLen').textContent = ($('#motive').value.length).toLocaleString();
+    (d.agree||[]).forEach((v,i)=>{ const c = $('#a'+i); if (c) c.checked = v === 'Y'; });
+  }catch(e){}
+}
+
+/* ---------- 제출 ---------- */
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toast._t); toast._t = setTimeout(()=>t.classList.remove('on'), 3200); }
+
+async function submit(){
+  const nb = $('#nextBtn'); nb.disabled = true; nb.textContent = '제출하는 중…';
+  const d = data();
+  try{
+    let res;
+    if (!CONFIG.ENDPOINT){
+      await new Promise(r=>setTimeout(r,700));
+      res = { ok:true, updated:false, demo:true };
+    } else {
+      const r = await fetch(CONFIG.ENDPOINT, { method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(d) });
+      res = await r.json();
+    }
+    if (!res.ok) throw new Error(res.message || '저장하지 못했습니다.');
+    try{ localStorage.removeItem(DRAFT_KEY); }catch(e){}
+    done(d, res);
+  }catch(err){
+    toast((err && err.message ? err.message : '네트워크 연결을 확인해 주세요.') + ' 다시 눌러 제출해 주세요.');
+    nb.disabled = false; nb.textContent = '신청서 제출하기';
+  }
+}
+
+function done(d, res){
+  document.body.classList.remove('mode-apply'); document.body.classList.add('mode-done');
+  $('#done').classList.add('on');
+  if (d.want === '아니요'){
+    $('#doneTitle').textContent = '응답을 제출했어요';
+    $('#doneMsg').textContent = '불참 의사가 접수되었습니다. 마음이 바뀌면 신청기간 안에 다시 제출해 주세요.';
+  } else if (res.updated){
+    $('#doneTitle').textContent = '신청 내용을 바꿨어요';
+  }
+  $('#receipt').innerHTML = `<p><b>${esc(d.name)}</b> · ${esc(d.major)} · ${esc(d.school)} ${esc(d.grade)}</p>`
+    + (res.time ? `<p style="color:var(--ink2);font-size:13px;margin-top:4px">접수 ${esc(res.time)}</p>` : '');
+  window.scrollTo(0,0);
+}
+
+/* ---------- 신청기간 확인 ---------- */
+(function gate(){
+  if (!CONFIG.ENDPOINT || TEST){
+    const tag = document.createElement('div'); tag.className = 'demo';
+    tag.textContent = !CONFIG.ENDPOINT ? '시연 모드 · 저장 안 됨' : '테스트 모드';
+    document.body.appendChild(tag);
+  }
+  if (TEST || !CONFIG.ENDPOINT) return;
+  const now = Date.now(), o = Date.parse(CONFIG.OPEN), c = Date.parse(CONFIG.CLOSE);
+  if (now < o || now > c){
+    document.body.classList.add('mode-closed'); $('#closed').classList.add('on');
+    if (now < o){ $('#closedTitle').textContent = '9월 22일(화)부터 신청할 수 있어요'; $('#closedMsg').textContent = '신청기간이 시작되면 이 주소로 다시 들어와 주세요.'; }
+    else { $('#closedTitle').textContent = '신청이 마감되었습니다'; $('#closedMsg').textContent = '최종 참여자는 검토 후 개별로 안내합니다.'; }
+  }
+})();
+loadDraft();
+</script>
+</body>
+</html>
