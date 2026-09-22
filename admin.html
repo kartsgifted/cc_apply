@@ -248,7 +248,8 @@ async function load(code, silent){
   document.body.classList.add('loading');
   try{
     const res = await api({ action:'list', code, sheet:F.sheet });
-    if (!res.auth){ return { authFail:true, message:res.message }; }
+    if (res.auth === false){ return { authFail:true, message:res.message }; }
+    if (res.auth === undefined){ return { oldServer:true }; }
     if (!res.ok) throw new Error(res.message);
     ROWS = res.rows.map((r,i) => ({ ...r, idx:i+1 }));
     $('#fetched').textContent = `불러온 시각 ${res.fetched}`;
@@ -269,6 +270,7 @@ $('#loginForm').addEventListener('submit', async e => {
   const r = await load(code, true);
   $('#loginBtn').disabled = false; $('#loginBtn').textContent = '현황 보기';
   if (r.authFail){ $('#loginErr').textContent = '관리자 코드가 올바르지 않습니다.'; $('#code').select(); return; }
+  if (r.oldServer){ $('#loginErr').textContent = '서버가 조회 기능이 없는 이전 버전입니다. Apps Script를 새 버전으로 배포해 주세요.'; return; }
   if (r.ok){ CODE = code; try{ sessionStorage.setItem(SS_KEY, code); }catch(_){} document.body.classList.add('authed'); }
   else $('#loginErr').textContent = '서버에 연결하지 못했습니다. 잠시 후 다시 시도하세요.';
 });
